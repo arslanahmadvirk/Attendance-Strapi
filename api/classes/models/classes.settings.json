@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "classes",
+  "info": {
+    "name": "classes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "teacherName": {
+      "type": "string"
+    },
+    "subjectName": {
+      "type": "string"
+    },
+    "class": {
+      "type": "string"
+    },
+    "section": {
+      "type": "string"
+    },
+    "batch": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}

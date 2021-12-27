@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "name": "students"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "studentName": {
+      "type": "string"
+    },
+    "rollNo": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "default": "Present"
+    },
+    "image": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "biginteger",
+      "required": true
+    },
+    "classId": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students_attendances",
+  "info": {
+    "name": "studentsAttendances",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "studentName": {
+      "type": "string"
+    },
+    "rollNo": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "attendancesId": {
+      "type": "biginteger",
+      "required": true
+    },
+    "userId": {
+      "type": "biginteger",
+      "required": true
+    },
+    "classId": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}
