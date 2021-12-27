@@ -21,9 +21,6 @@
     "status": {
       "type": "string"
     },
-    "image": {
-      "type": "string"
-    },
     "attendancesId": {
       "type": "biginteger",
       "required": true
@@ -35,6 +32,9 @@
     "classId": {
       "type": "biginteger",
       "required": true
+    },
+    "image": {
+      "type": "text"
     }
   }
 }
