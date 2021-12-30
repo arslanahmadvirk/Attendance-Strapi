@@ -22,16 +22,12 @@
       "type": "string",
       "default": "Present"
     },
-    "userId": {
-      "type": "biginteger",
-      "required": true
-    },
-    "classId": {
-      "type": "biginteger",
-      "required": true
-    },
     "image": {
       "type": "text"
+    },
+    "class": {
+      "model": "classes",
+      "via": "students"
     }
   }
 }

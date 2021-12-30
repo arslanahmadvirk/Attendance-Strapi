@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "classes",
   "info": {
-    "name": "classes"
+    "name": "classes",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -17,7 +18,7 @@
     "subjectName": {
       "type": "string"
     },
-    "class": {
+    "classname": {
       "type": "string"
     },
     "section": {
@@ -26,9 +27,18 @@
     "batch": {
       "type": "string"
     },
-    "userId": {
-      "type": "biginteger",
-      "required": true
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "classes"
+    },
+    "students": {
+      "via": "class",
+      "collection": "students"
+    },
+    "attendances": {
+      "via": "class",
+      "collection": "attendance"
     }
   }
 }

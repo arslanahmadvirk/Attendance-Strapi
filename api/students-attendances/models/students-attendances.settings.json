@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "students_attendances",
   "info": {
-    "name": "studentsAttendances",
+    "name": "Attendance Students",
     "description": ""
   },
   "options": {
@@ -21,20 +21,12 @@
     "status": {
       "type": "string"
     },
-    "attendancesId": {
-      "type": "biginteger",
-      "required": true
-    },
-    "userId": {
-      "type": "biginteger",
-      "required": true
-    },
-    "classId": {
-      "type": "biginteger",
-      "required": true
-    },
     "image": {
       "type": "text"
+    },
+    "attendance": {
+      "via": "attendancestudents",
+      "model": "attendance"
     }
   }
 }
