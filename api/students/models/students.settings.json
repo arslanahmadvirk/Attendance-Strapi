@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "students",
   "info": {
-    "name": "students",
-    "description": ""
+    "name": "students"
   },
   "options": {
     "increments": true,
@@ -12,10 +11,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "studentName": {
+    "studentname": {
       "type": "string"
     },
-    "rollNo": {
+    "rollno": {
       "type": "string"
     },
     "status": {

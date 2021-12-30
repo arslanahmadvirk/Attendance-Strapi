@@ -32,13 +32,13 @@
       "model": "user",
       "via": "classes"
     },
-    "students": {
-      "via": "class",
-      "collection": "students"
-    },
     "attendances": {
       "via": "class",
       "collection": "attendance"
+    },
+    "students": {
+      "via": "class",
+      "collection": "students"
     }
   }
 }
